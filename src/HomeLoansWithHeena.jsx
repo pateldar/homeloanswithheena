@@ -46,7 +46,7 @@ export default function HomeLoansWithHeena() {
         >
           {/* Headshot */}
           <img
-            src="/headshot.jpg"
+            src={`${process.env.PUBLIC_URL}/headshot.jpg`}
             alt="Heena Patel Headshot"
             width={272}
             height={325}
@@ -77,7 +77,7 @@ export default function HomeLoansWithHeena() {
       <section style={{ padding: '1rem 1rem 3rem', backgroundColor: '#ffffff', textAlign: 'center' }}>
         <h2 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '1rem' }}>What Clients Say</h2>
         <a href="https://www.zillow.com/lender-profile/mortageswithheena/" target="_blank" rel="noopener noreferrer">
-          <img src="/zillow-badge.svg" alt="Zillow Reviews" width={150} height={60} />
+          <img src={`${process.env.PUBLIC_URL}/zillow-badge.svg`} alt="Zillow Reviews" width={150} height={60} />
         </a>
         <p style={{ marginTop: '0.5rem', fontSize: '0.875rem', color: '#4b5563' }}>Click above to view real client reviews on Zillow.</p>
       </section>
@@ -142,7 +142,7 @@ export default function HomeLoansWithHeena() {
                 onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)'}
                 onMouseLeave={(e) => e.currentTarget.style.boxShadow = 'none'}
               >
-                <img src="/next-step-logo.png" alt="Next Step Lending" width={200} height={50} />
+                <img src={`${process.env.PUBLIC_URL}/next-step-logo.png`} alt="Next Step Lending" width={200} height={50} />
                 <p style={{ fontSize: '0.875rem', marginTop: '0.5rem', color: '#4b5563' }}>
                   Company NMLS: 28364396
                 </p>
@@ -170,7 +170,7 @@ export default function HomeLoansWithHeena() {
           <div style={{ marginTop: '3rem', textAlign: 'center' }}>
             <h3 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '0.5rem' }}>Coverage Map</h3>
             <p style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '1rem' }}>Explore where our lenders are licensed to serve you.</p>
-            <img src="/availmap.png" alt="Licensed States Map" style={{ maxWidth: '100%', borderRadius: '0.5rem' }} />
+            <img src={`${process.env.PUBLIC_URL}/availmap.png`} alt="Licensed States Map" style={{ maxWidth: '100%', borderRadius: '0.5rem' }} />
           </div>
         </div>
       </section>
